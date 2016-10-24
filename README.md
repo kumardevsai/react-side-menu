@@ -5,63 +5,65 @@ Multi level side menu component
 
 # Install
 
-   npm install --save react-side-menu
-   
+```bash
+npm install --save react-side-menu
+```
+
 # Usage
 
 Define menu object:
 
 ```js
-    const menu = [
-      {
-        key: 'accounts', name: 'Accounts', icon: 'fa-home', link: '#accounts',
-        childs: [
-          {
-            key: 'siliconstraits', name: 'Silicon Straits', link: '#siliconstraits',
-            childs: [
-              {
-                key: 'spacewalker', name: 'Space Walker', link: '#spacewalker',
-                childs: [
-                  { key: 'internal', name: 'Internal Team', link: '#internal' },
-                  { key: 'external', name: 'External Team', link: '#external' },
-                ]
-              },
-              { key: 'minion', name: 'Minion', link: '#minion' },
-              { key: 'tinker', name: 'Tinker', link: '#tinker' },
-            ],
-          },
-          {
-            key: 'microsoft', name: 'Microsoft', link: '#microsoft',
-            childs: [
-              { key: 'bill', name: 'Bill', link: '#bill' },
-              { key: 'gates', name: 'Gates', link: '#gates' },
-            ],
-          },
-          {
-            key: 'google', name: 'Google', link: '#google',
-            childs: [
-              { key: 'chrome', name: 'Chrome', link: '#chrome' },
-              { key: 'gmail', name: 'Gmail', link: '#gmail' },
-            ],
-          },
-          {
-            key: 'life', name: 'Life', link: '#life',
-            childs: [
-              { key: 'giang', name: 'Giang', link: '#giang' },
-              { key: 'code', name: 'Code', link: '#code' },
-            ],
-          },
-        ]
-      },
-      {
-        key: 'setting', name: 'Setting', link: '#setting', icon: 'fa-gear',
-      }
-    ];
+ const menu = [
+   {
+     key: 'accounts', name: 'Accounts', icon: 'fa-home', link: '#accounts',
+     childs: [
+       {
+         key: 'siliconstraits', name: 'Silicon Straits', link: '#siliconstraits',
+         childs: [
+           {
+             key: 'spacewalker', name: 'Space Walker', link: '#spacewalker',
+             childs: [
+               { key: 'internal', name: 'Internal Team', link: '#internal' },
+               { key: 'external', name: 'External Team', link: '#external' },
+             ]
+           },
+           { key: 'minion', name: 'Minion', link: '#minion' },
+           { key: 'tinker', name: 'Tinker', link: '#tinker' },
+         ],
+       },
+       {
+         key: 'microsoft', name: 'Microsoft', link: '#microsoft',
+         childs: [
+           { key: 'bill', name: 'Bill', link: '#bill' },
+           { key: 'gates', name: 'Gates', link: '#gates' },
+         ],
+       },
+       {
+         key: 'google', name: 'Google', link: '#google',
+         childs: [
+           { key: 'chrome', name: 'Chrome', link: '#chrome' },
+           { key: 'gmail', name: 'Gmail', link: '#gmail' },
+         ],
+       },
+       {
+         key: 'life', name: 'Life', link: '#life',
+         childs: [
+           { key: 'giang', name: 'Giang', link: '#giang' },
+           { key: 'code', name: 'Code', link: '#code' },
+         ],
+       },
+     ]
+   },
+   {
+     key: 'setting', name: 'Setting', link: '#setting', icon: 'fa-gear',
+   }
+ ];
 ```
 
 In your `render()`:
 ```jsx
-        <Menu menu={menu} activeMenu={'siliconstraits'} />
+<Menu menu={menu} activeMenu={'siliconstraits'} />
 ```
 
 # Disclaimer
@@ -70,7 +72,7 @@ This component depends on global Font Awesome icon pack to renders some icons.
 
 # Options
 ## `<Menu>` Component:
-- `menu` - [`MenuObject`](#menu-object): describe menu structure & content.
+- `menu` - [`MenuObject`](#menuobject): describe menu structure & content.
 - `activeMenu` - `String`: unique identity of the active menu, this is used to decide what menu to highlight.
 
 ## `MenuObject`:
@@ -181,7 +183,7 @@ Take a look at live demo: https://trungdq88.github.io/react-side-menu/simple
 # ROADMAP
 
 - [ ] Don't depends on Font Awesome for icons
-- [ ] More options (Ex: `onClick` callback, custom height menu, custom JSX component as an menu...)
+- [ ] More options (Ex: `onClick` callback, custom height menu item, custom JSX component as a menu item...)
 
 # LICENSE
 
