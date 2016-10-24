@@ -9,10 +9,10 @@
     "major": "npm run build && npm version major && git push && npm publish",
     "minor": "npm run build && npm version minor && git push && npm publish",
     "start": "NODE_ENV=development node dev-server ./webpack/config",
-    "clean-demo": "rimraf demo-build/*",
-    "build-demo": "npm run clean-demo && npm run webpack && cp examples/index.html demo-build/index.html",
+    "clean-demo": "rimraf docs/*",
+    "build-demo": "npm run clean-demo && npm run webpack && cp examples/index.html docs/index.html",
     "build": "./node_modules/babel-cli/bin/babel.js src -d lib",
-    "deploy-demo": "cd demo-build && git add --all && git commit -m \"Release at $(date)\" && git push",
+    "deploy-demo": "cd docs && git add --all && git commit -m \"Release at $(date)\" && git push",
     "webpack": "webpack --colors --progress --config ./webpack/config"
   },
   "babel": {
@@ -22,7 +22,7 @@
     ]
   },
   "config": {
-    "buildDir": "./demo-build",
+    "buildDir": "./docs",
     "devHost": "localhost",
     "devPort": 8233
   },
