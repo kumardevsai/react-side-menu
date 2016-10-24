@@ -29,10 +29,11 @@ export default class Item extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({
-      activeMenu: nextProps.activeMenu
-    });
-    console.log(nextProps.activeMenu);
+    if (nextProps.activeMenu !== this.props.activeMenu) {
+      this.setState({
+        activeMenu: nextProps.activeMenu
+      });
+    }
   }
 
   click(e) {
