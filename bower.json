@@ -1,0 +1,23 @@
+{
+  "name": "react-side-menu",
+  "description": "Easy multi level side menu component",
+  "main": "lib/react-side-menu.browser.js",
+  "authors": [
+    "Trung Dinh Quang"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "menu",
+    "side",
+    "sidemenu"
+  ],
+  "homepage": "https://github.com/trungdq88/react-side-menu",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

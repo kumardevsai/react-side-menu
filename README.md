@@ -5,8 +5,14 @@ Multi level side menu component
 
 # Install
 
+NPM:
 ```bash
 npm install --save react-side-menu
+```
+
+Bower:
+```bash
+  bower install react-side-menu
 ```
 
 # Usage
@@ -67,6 +73,10 @@ In your `render()`:
 ```
 
 You can also use this as a third-party libraries in your non-React application:
+
+```bash
+  bower install react-side-menu
+```
 
 ```js
 <script src="lib/react-side-menu.browser.js"></script>
