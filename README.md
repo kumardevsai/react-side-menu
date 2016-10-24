@@ -66,6 +66,15 @@ In your `render()`:
 <Menu menu={menu} activeMenu={'siliconstraits'} />
 ```
 
+You can also use this as a third-party libraries in your non-React application:
+
+```js
+<script src="lib/react-side-menu.browser.js"></script>
+<script>
+  ReactSideMenu(menu, 'siliconstraits', document.getElementById('menu'));
+</script>
+```
+
 # Disclaimer
 
 This component depends on global Font Awesome icon pack to renders some icons.
