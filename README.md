@@ -5,7 +5,7 @@ Multi level side menu component
 
 # Install
 
-NPM:
+npm:
 ```bash
 npm install --save react-side-menu
 ```
