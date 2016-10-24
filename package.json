@@ -1,6 +1,6 @@
 {
   "name": "react-side-menu",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Easy multi level side menu component",
   "main": "lib/index.js",
   "scripts": {
